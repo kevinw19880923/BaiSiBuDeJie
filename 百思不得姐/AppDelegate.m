@@ -1,12 +1,5 @@
-//
-//  AppDelegate.m
-//  百思不得姐
-//
-//  Created by 王鑫 on 16/5/5.
-//  Copyright © 2016年 KW. All rights reserved.
-//
-
 #import "AppDelegate.h"
+#import "KWTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +8,16 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    //创建主窗口
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    //创建tabBarVC
+    KWTabBarController *tabBarVC = [[KWTabBarController alloc]init];
+    //指定tabBarVC为项目的根控制器
+    self.window.rootViewController = tabBarVC;
+    //成为主窗口并且可视
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
