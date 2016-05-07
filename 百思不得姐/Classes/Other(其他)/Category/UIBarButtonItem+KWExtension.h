@@ -10,4 +10,7 @@
 
 @interface UIBarButtonItem (KWExtension)
 
+/** 自定义构造方法*/
++ (instancetype)itemWithImage:(UIImage *)image andHighlightedImage:(UIImage *)highlightedImage andTarget:(id)target andAction:(SEL)action;
+
 @end
