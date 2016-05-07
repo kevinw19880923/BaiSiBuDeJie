@@ -50,6 +50,7 @@
 		268C8EC51CDD78D600E18796 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 268C8EB21CDD78D600E18796 /* UIView+MJExtension.m */; };
 		268C8EC81CDD793500E18796 /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 268C8EC71CDD793500E18796 /* UIView+XMGExtension.m */; };
 		268C8ECD1CDD7FB300E18796 /* UIImage+KWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 268C8ECC1CDD7FB300E18796 /* UIImage+KWExtension.m */; };
+		268C8ED01CDD878700E18796 /* KWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 268C8ECF1CDD878700E18796 /* KWTabBar.m */; };
 		268E88561CDB8E8D00C629E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 268E88551CDB8E8D00C629E5 /* main.m */; };
 		268E88591CDB8E8D00C629E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 268E88581CDB8E8D00C629E5 /* AppDelegate.m */; };
 		268E88611CDB8E8D00C629E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268E88601CDB8E8D00C629E5 /* Assets.xcassets */; };
@@ -146,6 +147,8 @@
 		268C8ECA1CDD798700E18796 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		268C8ECB1CDD7FB300E18796 /* UIImage+KWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KWExtension.h"; sourceTree = "<group>"; };
 		268C8ECC1CDD7FB300E18796 /* UIImage+KWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KWExtension.m"; sourceTree = "<group>"; };
+		268C8ECE1CDD878700E18796 /* KWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWTabBar.h; sourceTree = "<group>"; };
+		268C8ECF1CDD878700E18796 /* KWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWTabBar.m; sourceTree = "<group>"; };
 		268E88511CDB8E8D00C629E5 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		268E88551CDB8E8D00C629E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		268E88571CDB8E8D00C629E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -359,6 +362,8 @@
 				268E88581CDB8E8D00C629E5 /* AppDelegate.m */,
 				268C8E4D1CDD781200E18796 /* KWTabBarController.h */,
 				268C8E4E1CDD781200E18796 /* KWTabBarController.m */,
+				268C8ECE1CDD878700E18796 /* KWTabBar.h */,
+				268C8ECF1CDD878700E18796 /* KWTabBar.m */,
 				268C8E3E1CDD76AB00E18796 /* KWNavigationController.h */,
 				268C8E3F1CDD76AB00E18796 /* KWNavigationController.m */,
 				268C8E411CDD770400E18796 /* KWEssenceViewController.h */,
@@ -469,6 +474,7 @@
 				268C8ECD1CDD7FB300E18796 /* UIImage+KWExtension.m in Sources */,
 				268C8EBA1CDD78D600E18796 /* MJRefreshAutoStateFooter.m in Sources */,
 				268C8E831CDD78C900E18796 /* NSObject+MJKeyValue.m in Sources */,
+				268C8ED01CDD878700E18796 /* KWTabBar.m in Sources */,
 				268C8EBD1CDD78D600E18796 /* MJRefreshBackStateFooter.m in Sources */,
 				268C8EB31CDD78D600E18796 /* MJRefreshAutoFooter.m in Sources */,
 				268C8EB71CDD78D600E18796 /* MJRefreshHeader.m in Sources */,

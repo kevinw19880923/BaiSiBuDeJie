@@ -1,9 +1,16 @@
+/**
+ //3 利用KVC获取tabBar:self.tabBar = tabBar;相当于XIB中继承自定义的类
+ KWTabBar *tabBar = [[KWTabBar alloc]init];
+ [self setValue:tabBar forKeyPath:@"tabBar"];
+ */
+
 #import "KWTabBarController.h"
 #import "KWNavigationController.h"
 #import "KWEssenceViewController.h"
 #import "KWNewViewController.h"
 #import "KWFriendTrendsViewController.h"
 #import "KWMeViewController.h"
+#import "KWTabBar.h"
 
 @interface KWTabBarController ()
 
@@ -16,7 +23,9 @@
     [super viewDidLoad];
     //2 创建4个子控制器
     [self setupChildViewControllers];
-    
+    //3 利用KVC获取tabBar
+    KWTabBar *tabBar = [[KWTabBar alloc]init];
+    [self setValue:tabBar forKeyPath:@"tabBar"];
 }
 
 //当本类第一次被调用的时候 会被 调用一次
@@ -74,4 +83,5 @@
     vc.tabBarItem.image = image;
     vc.tabBarItem.selectedImage = selectedImage;
 }
+
 @end
