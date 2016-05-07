@@ -11,6 +11,7 @@
 //头文件
 #import "UIView+XMGExtension.h"
 #import "UIImage+KWExtension.h"
+#import "UIBarButtonItem+KWExtension.h"
 
 //打印
 #ifdef DEBUG

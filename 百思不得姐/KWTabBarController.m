@@ -53,25 +53,21 @@
                           andImage:[UIImage imageWithoutRendering:@"tabBar_essence_icon"]
                   andSelectedImage:[UIImage imageNamed:@"tabBar_essence_click_icon"]
                           andTitle:@"精华"];
-    [self addChildViewController:essenceVC];
     
     KWNewViewController *newVC = [[KWNewViewController alloc]init];
     [self setupChildViewController:newVC andImage:[UIImage imageWithoutRendering:@"tabBar_new_icon"]
                   andSelectedImage:[UIImage imageWithoutRendering:@"tabBar_new_click_icon"]
                           andTitle:@"新帖"];
-    [self addChildViewController:newVC];
     
     KWFriendTrendsViewController *friendTrendsVC = [[KWFriendTrendsViewController alloc]init];
     [self setupChildViewController:friendTrendsVC andImage:[UIImage imageWithoutRendering:@"tabBar_friendTrends_icon"]
                   andSelectedImage:[UIImage imageWithoutRendering:@"tabBar_friendTrends_click_icon"]
                           andTitle:@"关注"];
-    [self addChildViewController:friendTrendsVC];
     
     KWMeViewController *meVC = [[KWMeViewController alloc]init];
     [self setupChildViewController:meVC andImage:[UIImage imageWithoutRendering:@"tabBar_me_icon"]
                   andSelectedImage:[UIImage imageWithoutRendering:@"tabBar_me_click_icon"]
                           andTitle:@"我"];
-    [self addChildViewController:meVC];
 }
 
 - (void)setupChildViewController:(UIViewController *)vc
@@ -82,6 +78,8 @@
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = image;
     vc.tabBarItem.selectedImage = selectedImage;
+    KWNavigationController *naviVC = [[KWNavigationController alloc]initWithRootViewController:vc];
+    [self addChildViewController:naviVC];
 }
 
 @end
